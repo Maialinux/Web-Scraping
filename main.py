@@ -1,21 +1,27 @@
-import requests
-from bs4 import BeautifulSoup
-import re
-import pandas as pd
-import math
+import requests # Módulo para requisições
+from bs4 import BeautifulSoup # Módulo possui ferramentas para coletar informação de algum site  
+import re # Módulo para trabalhar com regex
+import pandas as pd # Módulo para trabalhar com tabelas
+import math # Módulo para trabalhar com funções matemáticas
+
+# XlsxWriter - Módulo para salvar arquivo em .xlsx
+# cx_Freeze - Módulo que possui recurso para mostrar as dependências utilizadas no programa
 
 class Main():
+    # Cosntrutor da classe Main
     def __init__(self) -> None:
-        self.Pesquisar()
+        self.Pesquisar() # Função declarada dentro do construtor
         pass
     
-    
+    # Função Pesquisar
     def Pesquisar(self):
         self.Produto1_hardstore()
         self.Produto2_hardstore()
         self.Produto3_hardstore()
         pass
     
+
+    # Função que busca no site dados para produto 1
     
     def Produto1_hardstore(self):
                 
@@ -147,7 +153,9 @@ class Main():
         df3.to_excel(writer, sheet_name='SSD Externo')
         writer.close()
         pass
+
     
+    # Função que busca no site dados para produto 2
     
     def Produto2_hardstore(self):
         url="https://www.hardstore.com.br/shop/memoria?filter_brand=31&filter_last=brand"
@@ -201,7 +209,9 @@ class Main():
 
         writer.close()
         pass
+
     
+    # Função que busca no site dados para produto 3
     
     def Produto3_hardstore(self):
         url="https://www.hardstore.com.br/shop/placa-video"
