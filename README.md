@@ -1,4 +1,4 @@
-# Web-Scrapping
+# Web-Scraping
 É usado para coletar informações de sites. Este programa foi feito e testado utilizando o Python 3.12.2.
 
 # Como usar ?
