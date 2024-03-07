@@ -1,5 +1,5 @@
 # Web-Scrapping
-É usado para coletar informações de sites.
+É usado para coletar informações de sites. Este programa foi feito e testado utilizando o Python 3.12.2
 
 # Como usar ?
 
@@ -33,5 +33,3 @@
 ### Irá ser gerado planilhas do tipo excel com dados sobre memórias, hds e placas de videos. 
 
 ### Nada impede vocês de aprimorar isso em um programa gráfico.
-
-  
